@@ -24,7 +24,7 @@
     
 }
 
-.button {
+.button, .active:hover {
     font-size: 100%;
     padding: .5em 1em;
     color: rgba(0,0,0,.8);
@@ -32,7 +32,7 @@
     background-color: #e6e6e6;
     text-decoration: none;
     border-radius: 2px;
-    width:100px;
+    width: 100px;
     position: relative;
     margin: 10px auto 10px auto;
     text-align: center;
@@ -40,11 +40,26 @@
     cursor: pointer;
 }
 
+.active, .button:hover {
+	font-size: 100%;
+    padding: .5em 1em;
+    border: transparent;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 100px;
+    position: relative;
+    margin: 10px auto 10px auto;
+    text-align: center;
+	font-family: sans-serif, Arial, Helvetica;
+    cursor: pointer;
+	background-color: pink;
+	color: white;
+}
+
 .readButton {
     display: flex;
     align-self: center;
     margin-bottom: 5px;
-    /* align-self: center; */
 }
 
 .deleteButton {
@@ -54,14 +69,8 @@
     margin-top: 10px;
 }
 
-.active, .button:hover {
-    color: rgba(0,0,0,.8);
-    background-color: pink;
-    color: white;
-}
-
 #newbook-div {
-    display: block;
+    display: none;
     margin: 10px auto 20px auto;
 }
 
