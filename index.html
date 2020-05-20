@@ -3,9 +3,30 @@
 <head>
     <title>Library</title>
     <meta charset="UTF-8"/>
+    <link rel = 'stylesheet' href = '/style.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
+    <div class="button" id="newbook">New Book</div>
+    <div id="newbook-div">
+        <form id="newbook-form">
+            <ul>
+                <li>
+                    <input type="text" name="title" class="field-style field-split align-left" placeholder="Title" />
+                    <input type="text" name="author" class="field-style field-split align-right" placeholder="Author" />
+                
+                </li>
+                <li>
+                    <input type="number" name="pages" class="field-style field-split align-left" placeholder="Pages" />
+                    <input type="text" name="read" class="field-style field-split align-right" placeholder="Read" />
+                </li>
+                <li>
+                <input class="button" type="submit" value="Submit" />
+                </li>
+                </ul>
+        </form>
+    </div>
+    <div id="container"></div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
