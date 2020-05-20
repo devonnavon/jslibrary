@@ -122,6 +122,7 @@ function appendDelete(bookContainer, currentBook){
     deleteButton.addEventListener('click', (e) => {
        
         deleteBook(bookContainer, currentBook);
+        render();
     
     });
     bookContainer.appendChild(deleteButton);
@@ -134,7 +135,7 @@ function updateRead(bookContainer,currentBook) {
 }
 
 function deleteBook(bookContainer, currentBook){
-    myLibrary.filter(book => (!currentBook));
+    myLibrary = myLibrary.filter(e=>(e!==currentBook));
 }
 
 
